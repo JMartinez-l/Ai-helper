@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g3fh$0%#(8kko3hi4mx9*%%=4t#!xjn(%#(lsnau_hl@+sw)4b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://ai-helper-trdv.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ai-helper-trdv.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
