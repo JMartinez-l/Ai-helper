@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'ai_helper.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'aibd',
-        'USER': 'ai_user',
-        'PASSWORD': 'ai_password',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': os.environ.get('aibd'),
+        'USER': os.environ.get('ai_user'),
+        'PASSWORD': os.environ.get('ai_password'),
+        'HOST': os.environ.get('https://mysql-8-wgld.onrender.com'),
+        'PORT': os.environ.get('3306'),
     }
 }
 
