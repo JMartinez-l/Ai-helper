@@ -18,10 +18,10 @@
                 <input type="password" class="form-control" id="password1" name="password1" placeholder="Type your password" required>
             </div>
             <div class="mb-3">
-                <label for="confirm_password" class="form-label">Repeat Password</label>
+                <label for="confirm_password" class="form-label">Repeat Password</label>{{ form.errors }}
                 <input type="password" class="form-control" id="password2" name="password2" placeholder="Repeat password" required>
             </div>
-            {{ form.errors }}
+            
             <button type="submit" class="btn btn-primary w-100">Register</button>
             <div class="text-center mt-3">
                 <small>Already have an account <a href="{% url 'login' %}">Login here</a></small>
