@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'ai_helper.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('aibd'),
-        'USER': os.environ.get('ai_user'),
-        'PASSWORD': os.environ.get('ai_password'),
-        'HOST': os.environ.get('https://mysql-8-wgld.onrender.com'),
-        'PORT': os.environ.get('3306'),
+        'NAME': os.getenv('DB_NAME', 'aibd'),
+        'USER': os.getenv('DB_USER', 'ai_user'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'ai_password'),
+        'HOST': os.getenv('DB_HOST', 'https://mysql-on-render-mvio.onrender.com'),
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
 
