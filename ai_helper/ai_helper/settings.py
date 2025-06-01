@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-g3fh$0%#(8kko3hi4mx9*%%=4t#!xjn(%#(lsnau_hl@+sw)4b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*'] #change for production
+ALLOWED_HOSTS = ['ai-helper-production.up.railway.app', 'localhost']
 
 
 # Application definition
@@ -141,3 +141,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = BASE_DIR / 'uploads'
+
+CSRF_TRUSTED_ORIGINS = ['https://ai-helper-production.up.railway.app']
