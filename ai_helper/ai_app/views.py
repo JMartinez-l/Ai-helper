@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from django.contrib.auth import authenticate, login
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from .serializers import RegisterSerializer
 
 
 # Create your views here.
